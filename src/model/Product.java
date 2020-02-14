@@ -1,6 +1,6 @@
 package model;
 
-public class Produkt {
+public class Product {
 
     private String  nazwa;
     private String  opis;
@@ -8,7 +8,7 @@ public class Produkt {
     private Boolean  czyTrzebaWazyc;
     private String  kodKreskowy;
 
-    public Produkt(String nazwa, String opis, String cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
+    public Product(String nazwa, String opis, String cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
         this.nazwa = nazwa;
         this.opis = opis;
         this.cena = cena;
@@ -17,7 +17,7 @@ public class Produkt {
 
     }
 
-    public Produkt() {
+    public Product() {
     }
 
     public String getNazwa() {
