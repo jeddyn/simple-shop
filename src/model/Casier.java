@@ -1,19 +1,19 @@
 package model;
 
-public class Kasjer {
+public class Casier {
     private String numer;
     private String imie;
     private String nazwiso;
     private String stanowisko;
 
-    public Kasjer(String numer, String imie, String nazwiso, String stanowisko) {
+    public Casier(String numer, String imie, String nazwiso, String stanowisko) {
         this.numer = numer;
         this.imie = imie;
         this.nazwiso = nazwiso;
         this.stanowisko = stanowisko;
     }
 
-    public Kasjer() {
+    public Casier() {
     }
 
     public String getNumer() {
