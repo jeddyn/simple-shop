@@ -9,7 +9,7 @@ public class KartaPłatnicza {
     public KartaPłatnicza(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
         this.kodCVV = kodCVV;
         this.numerKarty = numerKarty;
-        this.dataOdKiedyWażna = dataOdKiedyWażna;
+         this.dataOdKiedyWażna = dataOdKiedyWażna;
     }
 
     public KartaPłatnicza() {
