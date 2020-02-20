@@ -3,7 +3,7 @@ package model;
 public class CreditCard {
 
     private String kodCVV;
-    private String numerKarty;
+     private String numerKarty;
     private String dataOdKiedyWażna;
 
     public CreditCard(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
