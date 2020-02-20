@@ -1,18 +1,18 @@
 package model;
 import java.util.List;
-public class Kasa {
+public class CashRegister {
 
 private String numer;
     private String paragon;
    List<Produkt>listaKodowKreskowych ;
 
-    public Kasa(String numer, String paragon, List<Produkt> listaKodowKreskowych) {
+    public CashRegister(String numer, String paragon, List<Produkt> listaKodowKreskowych) {
         this.numer = numer;
         this.paragon = paragon;
         this.listaKodowKreskowych = listaKodowKreskowych;
     }
 
-    public Kasa() {
+    public CashRegister() {
     }
 
     public String getNumer() {

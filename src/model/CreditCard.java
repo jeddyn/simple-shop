@@ -1,18 +1,18 @@
 package model;
 
-public class KartaPłatnicza {
+public class CreditCard {
 //test
     private String kodCVV;
-    private String numerKarty;
+    private String creditCardNumber;
     private String dataOdKiedyWażna;
 
-    public KartaPłatnicza(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
+    public CreditCard(String kodCVV, String creditCardNumber, String dataOdKiedyWażna) {
         this.kodCVV = kodCVV;
-        this.numerKarty = numerKarty;
+        this.creditCardNumber = creditCardNumber;
         this.dataOdKiedyWażna = dataOdKiedyWażna;
     }
 //test
-    public KartaPłatnicza() {
+    public CreditCard() {
     }
 
     public String getKodCVV() {
@@ -23,12 +23,12 @@ public class KartaPłatnicza {
         this.kodCVV = kodCVV;
     }
 
-    public String getNumerKarty() {
-        return numerKarty;
+    public String getCreditCardNumber() {
+        return creditCardNumber;
     }
 
-    public void setNumerKarty(String numerKarty) {
-        this.numerKarty = numerKarty;
+    public void setCreditCardNumber(String creditCardNumber) {
+        this.creditCardNumber = creditCardNumber;
     }
 
     public String getDataOdKiedyWażna() {
@@ -43,7 +43,7 @@ public class KartaPłatnicza {
     public String toString() {
         return "KartaPłatnicza{" +
                 "kodCVV='" + kodCVV + '\'' +
-                ", numerKarty='" + numerKarty + '\'' +
+                ", numerKarty='" + creditCardNumber + '\'' +
                 ", dataOdKiedyWażna='" + dataOdKiedyWażna + '\'' +
                 '}';
     }
