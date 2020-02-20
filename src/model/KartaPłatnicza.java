@@ -11,7 +11,7 @@ public class KartaPłatnicza {
         this.numerKarty = numerKarty;
         this.dataOdKiedyWażna = dataOdKiedyWażna;
     }
-
+//test
     public KartaPłatnicza() {
     }
 
