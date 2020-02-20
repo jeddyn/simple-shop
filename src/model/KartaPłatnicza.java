@@ -1,7 +1,7 @@
 package model;
 
 public class KartaPłatnicza {
-
+//test
     private String kodCVV;
     private String numerKarty;
     private String dataOdKiedyWażna;
