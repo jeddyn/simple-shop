@@ -2,16 +2,16 @@ package model;
 
 import java.util.List;
 
-public class Koszyk {
+public class ShoppingBasket {
 private double łącznaCena;
-List<Produkt> listaProduktów;
+List<Product> listaProduktów;
 
-    public Koszyk(double łącznaCena, List<Produkt> listaProduktów) {
+    public ShoppingBasket( double łącznaCena, List<Product> listaProduktów) {
         this.łącznaCena = łącznaCena;
         this.listaProduktów = listaProduktów;
     }
 
-    public Koszyk() {
+    public ShoppingBasket() {
     }
 
     public double getŁącznaCena() {
@@ -22,17 +22,17 @@ List<Produkt> listaProduktów;
         this.łącznaCena = łącznaCena;
     }
 
-    public List<Produkt> getListaProduktów() {
+    public List<Product> getListaProduktów() {
         return listaProduktów;
     }
 
-    public void setListaProduktów(List<Produkt> listaProduktów) {
+    public void setListaProduktów(List<Product> listaProduktów) {
         this.listaProduktów = listaProduktów;
     }
 
     @Override
     public String toString() {
-        return "Koszyk{" +
+        return "ShoppingBasket{" +
                 "łącznaCena='" + łącznaCena + '\'' +
                 ", listaProduktów=" + listaProduktów + '}';
     }

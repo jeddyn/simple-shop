@@ -1,18 +1,18 @@
 package model;
 import java.util.List;
-public class Kasa {
+public class CashRegister {
 
 private String numer;
     private String paragon;
-   List<Produkt>listaKodowKreskowych ;
+   List<Product>listaKodowKreskowych ;
 
-    public Kasa(String numer, String paragon, List<Produkt> listaKodowKreskowych) {
+    public CashRegister( String numer, String paragon, List<Product> listaKodowKreskowych) {
         this.numer = numer;
         this.paragon = paragon;
         this.listaKodowKreskowych = listaKodowKreskowych;
     }
 
-    public Kasa() {
+    public CashRegister() {
     }
 
     public String getNumer() {
@@ -31,17 +31,17 @@ private String numer;
         this.paragon = paragon;
     }
 
-    public List<Produkt> getListaKodowKreskowych() {
+    public List<Product> getListaKodowKreskowych() {
         return listaKodowKreskowych;
     }
 
-    public void setListaKodowKreskowych(List<Produkt> listaKodowKreskowych) {
+    public void setListaKodowKreskowych(List<Product> listaKodowKreskowych) {
         this.listaKodowKreskowych = listaKodowKreskowych;
     }
 
     @Override
     public String toString() {
-        return "Kasa{" +
+        return "CashRegister{" +
                 "numer='" + numer + '\'' +
                 ", paragon='" + paragon + '\'' +
                 ", listaKodowKreskowych=" + listaKodowKreskowych +
