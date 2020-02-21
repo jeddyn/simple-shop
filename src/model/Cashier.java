@@ -3,13 +3,13 @@ package model;
 public class Cashier {
     private String numer;
     private String imie;
-    private String nazwiso;
+    private String nazwisko;
     private String stanowisko;
 
-    public Cashier(String numer, String imie, String nazwiso, String stanowisko) {
+    public Cashier(String numer, String imie, String nazwisko, String stanowisko) {
         this.numer = numer;
         this.imie = imie;
-        this.nazwiso = nazwiso;
+        this.nazwisko = nazwisko;
         this.stanowisko = stanowisko;
     }
 
@@ -32,12 +32,12 @@ public class Cashier {
         this.imie = imie;
     }
 
-    public String getNazwiso() {
-        return nazwiso;
+    public String getNazwisko() {
+        return nazwisko;
     }
 
-    public void setNazwiso(String nazwiso) {
-        this.nazwiso = nazwiso;
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
     }
 
     public String getStanowisko() {
@@ -53,7 +53,7 @@ public class Cashier {
         return "Kasjer{" +
                 "numer='" + numer + '\'' +
                 ", imie='" + imie + '\'' +
-                ", nazwiso='" + nazwiso + '\'' +
+                ", nazwiso='" + nazwisko + '\'' +
                 ", stanowisko='" + stanowisko + '\'' +
                 '}';
     }
