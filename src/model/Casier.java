@@ -3,13 +3,13 @@ package model;
 public class Casier {
     private String numer;
     private String imie;
-    private String nazwiso;
+    private String nazwisko;
     private String stanowisko;
 
     public Casier(String numer, String imie, String nazwiso, String stanowisko) {
         this.numer = numer;
         this.imie = imie;
-        this.nazwiso = nazwiso;
+        this.nazwisko = nazwiso;
         this.stanowisko = stanowisko;
     }
 
@@ -32,12 +32,12 @@ public class Casier {
         this.imie = imie;
     }
 
-    public String getNazwiso() {
-        return nazwiso;
+    public String getNazwisko() {
+        return nazwisko;
     }
 
-    public void setNazwiso(String nazwiso) {
-        this.nazwiso = nazwiso;
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
     }
 
     public String getStanowisko() {
@@ -53,7 +53,7 @@ public class Casier {
         return "Kasjer{" +
                 "numer='" + numer + '\'' +
                 ", imie='" + imie + '\'' +
-                ", nazwiso='" + nazwiso + '\'' +
+                ", nazwiso='" + nazwisko + '\'' +
                 ", stanowisko='" + stanowisko + '\'' +
                 '}';
     }
