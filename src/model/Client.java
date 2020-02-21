@@ -5,7 +5,7 @@ public class Client {
 private String  kartaPlatnicza;
     private String  Koszyk;
     private double  gotowka;
-
+//test
     public Client(String kartaPlatnicza, String koszyk, double gotowka) {
         this.kartaPlatnicza = kartaPlatnicza;
         Koszyk = koszyk;

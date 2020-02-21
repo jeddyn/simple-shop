@@ -2,24 +2,15 @@ package model;
 
 import java.util.List;
 
-public class Basket {
-private double łącznaCena;
+public class ShoppingBasket {
+
 List<Product> listaProduktów;
 
-    public Basket(double łącznaCena, List<Product> listaProduktów) {
-        this.łącznaCena = łącznaCena;
+    public ShoppingBasket(List<Product> listaProduktów) {
         this.listaProduktów = listaProduktów;
     }
 
-    public Basket() {
-    }
-
-    public double getŁącznaCena() {
-        return łącznaCena;
-    }
-
-    public void setŁącznaCena(double łącznaCena) {
-        this.łącznaCena = łącznaCena;
+    public ShoppingBasket() {
     }
 
     public List<Product> getListaProduktów() {
@@ -33,7 +24,6 @@ List<Product> listaProduktów;
     @Override
     public String toString() {
         return "Koszyk{" +
-                "łącznaCena='" + łącznaCena + '\'' +
                 ", listaProduktów=" + listaProduktów + '}';
     }
 }
