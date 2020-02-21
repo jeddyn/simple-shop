@@ -1,12 +1,19 @@
 package service;
 
+import model.Product;
 import model.ShoppingBasket;
+
+import java.util.List;
 
 public class ShoppingBasketService {
 
 
-    public double totalPrice(ShoppingBasket shoppingBasket){
-
-        return 0;
+    public double totalPrice(ShoppingBasket shoppingBasket) {
+        List<Product> listOfProduct=shoppingBasket.getListaProduktów();
+        double totalPrice=0;
+        for (int i=0; i < listOfProduct.size(); i++) {
+            totalPrice+=listOfProduct.get(i).getCena();
+        }
+        return totalPrice;
     }
 }
