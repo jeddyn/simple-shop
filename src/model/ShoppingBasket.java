@@ -2,21 +2,22 @@ package model;
 
 import java.util.List;
 
-public class Koszyk {
-List<Produkt> listaProduktów;
+public class ShoppingBasket {
 
-    public Koszyk(List<Produkt> listaProduktów) {
+    List<Product> listaProduktów;
+
+    public ShoppingBasket( List<Product> listaProduktów ) {
         this.listaProduktów = listaProduktów;
     }
 
-    public Koszyk() {
+    public ShoppingBasket() {
     }
 
-    public List<Produkt> getListaProduktów() {
+    public List<Product> getListaProduktów() {
         return listaProduktów;
     }
 
-    public void setListaProduktów(List<Produkt> listaProduktów) {
+    public void setListaProduktów( List<Product> listaProduktów ) {
         this.listaProduktów = listaProduktów;
     }
 

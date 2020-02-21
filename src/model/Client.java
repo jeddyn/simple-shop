@@ -1,18 +1,18 @@
 package model;
 
-public class Klient {
+public class Client {
 
 private String  kartaPlatnicza;
     private String  Koszyk;
     private double  gotowka;
-
-    public Klient(String kartaPlatnicza, String koszyk, double gotowka) {
+//test
+    public Client(String kartaPlatnicza, String koszyk, double gotowka) {
         this.kartaPlatnicza = kartaPlatnicza;
         Koszyk = koszyk;
         this.gotowka = gotowka;
     }
 
-    public Klient() {
+    public Client() {
     }
 
     public String getKartaPlatnicza() {
