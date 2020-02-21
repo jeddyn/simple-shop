@@ -4,11 +4,11 @@ public class Product {
 
     private String  nazwa;
     private String  opis;
-    private String  cena;
+    private Double cena;
     private Boolean  czyTrzebaWazyc;
     private String  kodKreskowy;
 
-    public Product(String nazwa, String opis, String cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
+    public Product(String nazwa, String opis, Double cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
         this.nazwa = nazwa;
         this.opis = opis;
         this.cena = cena;
@@ -36,11 +36,11 @@ public class Product {
         this.opis = opis;
     }
 
-    public String getCena() {
+    public Double getCena() {
         return cena;
     }
 
-    public void setCena(String cena) {
+    public void setCena(Double cena) {
         this.cena = cena;
     }
 
