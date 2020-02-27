@@ -17,4 +17,11 @@ public class ShoppingBasketService {
         }
         return sumaCenProduktow;
     }
+
+    public void wyswietlNazwyProduktow(ShoppingBasket shoppingBasket){
+        List<Product> listaProduktow = shoppingBasket.getListaProduktów();
+        for (int i = 0; i < listaProduktow.size(); i++) {
+            System.out.println(listaProduktow.get(i));
+        }
+    }
 }
