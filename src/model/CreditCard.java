@@ -6,7 +6,7 @@ public class CreditCard {
      private String numerKarty;
     private String dataOdKiedyWażna;
 
-    public CreditCard(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
+    public CreditCard( String kodCVV, String numerKarty, String dataOdKiedyWażna) {
         this.kodCVV = kodCVV;
         this.numerKarty = numerKarty;
         this.dataOdKiedyWażna = dataOdKiedyWażna;
@@ -41,7 +41,7 @@ public class CreditCard {
 
     @Override
     public String toString() {
-        return "KartaPłatnicza{" +
+        return "CreditCard{" +
                 "kodCVV='" + kodCVV + '\'' +
                 ", numerKarty='" + numerKarty + '\'' +
                 ", dataOdKiedyWażna='" + dataOdKiedyWażna + '\'' +

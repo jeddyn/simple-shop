@@ -4,11 +4,11 @@ public class Product {
 
     private String  nazwa;
     private String  opis;
-    private double  cena;
+    private String  cena;
     private Boolean  czyTrzebaWazyc;
     private String  kodKreskowy;
 
-    public Product(String nazwa, String opis, double cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
+    public Product( String nazwa, String opis, String cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
         this.nazwa = nazwa;
         this.opis = opis;
         this.cena = cena;
@@ -36,11 +36,11 @@ public class Product {
         this.opis = opis;
     }
 
-    public double getCena() {
+    public String getCena() {
         return cena;
     }
 
-    public void setCena(double cena) {
+    public void setCena(String cena) {
         this.cena = cena;
     }
 
@@ -62,7 +62,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Produkt{" +
+        return "Product{" +
                 "nazwa='" + nazwa + '\'' +
                 ", opis='" + opis + '\'' +
                 ", cena='" + cena + '\'' +

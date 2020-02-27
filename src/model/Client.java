@@ -5,8 +5,8 @@ public class Client {
 private String  kartaPlatnicza;
     private String  Koszyk;
     private double  gotowka;
-//test
-    public Client(String kartaPlatnicza, String koszyk, double gotowka) {
+
+    public Client( String kartaPlatnicza, String koszyk, double gotowka) {
         this.kartaPlatnicza = kartaPlatnicza;
         Koszyk = koszyk;
         this.gotowka = gotowka;
@@ -41,9 +41,9 @@ private String  kartaPlatnicza;
 
     @Override
     public String toString() {
-        return "Klient{" +
+        return "Client{" +
                 "kartaPlatnicza='" + kartaPlatnicza + '\'' +
-                ", Koszyk='" + Koszyk + '\'' +
+                ", ShoppingBasket='" + Koszyk + '\'' +
                 ", gotowka=" + gotowka +
                 '}';
     }

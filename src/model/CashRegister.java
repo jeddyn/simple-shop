@@ -6,7 +6,7 @@ private String numer;
     private String paragon;
    List<Product>listaKodowKreskowych ;
 
-    public CashRegister(String numer, String paragon, List<Product> listaKodowKreskowych) {
+    public CashRegister( String numer, String paragon, List<Product> listaKodowKreskowych) {
         this.numer = numer;
         this.paragon = paragon;
         this.listaKodowKreskowych = listaKodowKreskowych;
@@ -41,7 +41,7 @@ private String numer;
 
     @Override
     public String toString() {
-        return "Kasa{" +
+        return "CashRegister{" +
                 "numer='" + numer + '\'' +
                 ", paragon='" + paragon + '\'' +
                 ", listaKodowKreskowych=" + listaKodowKreskowych +

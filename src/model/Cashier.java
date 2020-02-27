@@ -6,9 +6,9 @@ public class Cashier {
     private String surname;
     private String position;
 
-    public Cashier(String number, String name, String surname, String position) {
-        this.number = number;
-        this.name = name;
+    public Cashier( String number, String name, String surname, String position ) {
+        this.number= number;
+        this.name= name;
         this.surname = surname;
         this.position = position;
     }
@@ -17,18 +17,18 @@ public class Cashier {
     }
 
     public String getNumber() {
-        return number;
+        return number ;
     }
 
-    public void setNumber(String number) {
+    public void setNumber( String number ) {
         this.number = number;
     }
 
     public String getName() {
-        return name;
+        return name ;
     }
 
-    public void setName(String name) {
+    public void setName( String name ) {
         this.name = name;
     }
 
@@ -36,7 +36,7 @@ public class Cashier {
         return surname;
     }
 
-    public void setSurname(String surname) {
+    public void setSurname( String surname ) {
         this.surname = surname;
     }
 
@@ -44,7 +44,7 @@ public class Cashier {
         return position;
     }
 
-    public void setPosition(String position) {
+    public void setPosition( String position ) {
         this.position = position;
     }
 
