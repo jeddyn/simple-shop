@@ -2,16 +2,16 @@ package model;
 
 import java.util.List;
 
-public class ShoppingBasker {
+public class ShoppingBasket {
 private double łącznaCena;
 List<Product> listaProduktów;
 
-    public ShoppingBasker(double łącznaCena, List<Product> listaProduktów) {
+    public ShoppingBasket(double łącznaCena, List<Product> listaProduktów) {
         this.łącznaCena = łącznaCena;
         this.listaProduktów = listaProduktów;
     }
 
-    public ShoppingBasker() {
+    public ShoppingBasket() {
     }
 
     public double getŁącznaCena() {

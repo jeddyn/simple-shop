@@ -2,13 +2,13 @@ package model;
 
 public class Product {
 
-    private String  nazwa;
+    private double  nazwa;
     private String  opis;
-    private String  cena;
+    private double cena;
     private Boolean  czyTrzebaWazyc;
     private String  kodKreskowy;
 
-    public Product(String nazwa, String opis, String cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
+    public Product(double nazwa, String opis, double cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
         this.nazwa = nazwa;
         this.opis = opis;
         this.cena = cena;
@@ -20,11 +20,11 @@ public class Product {
     public Product() {
     }
 
-    public String getNazwa() {
+    public double getNazwa() {
         return nazwa;
     }
 
-    public void setNazwa(String nazwa) {
+    public void setNazwa(double nazwa) {
         this.nazwa = nazwa;
     }
 
@@ -36,11 +36,11 @@ public class Product {
         this.opis = opis;
     }
 
-    public String getCena() {
+    public double getCena() {
         return cena;
     }
 
-    public void setCena(String cena) {
+    public void setCena(double cena) {
         this.cena = cena;
     }
 
