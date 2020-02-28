@@ -7,9 +7,8 @@ import java.util.List;
 
 public class ShoppingBasketService {
 
-
     public double totalPrice( ShoppingBasket shoppingBasket ) {
-        List<Product> listOfProducts = shoppingBasket.getListaProduktów();
+        List<Product> listOfProducts = shoppingBasket.getListaProduktow();
         double totalPrice = 0;
 
         for (int i = 0; i < listOfProducts.size(); i++) {
@@ -17,5 +16,12 @@ public class ShoppingBasketService {
         }
 
         return totalPrice;
+    }
+
+    public void printAllProductsName(ShoppingBasket shoppingBasket){
+        List<Product> listOfProducts = shoppingBasket.getListaProduktow();
+        for (int i = 0; i < listOfProducts.size(); i++){
+            System.out.println(listOfProducts.get(i).getNazwa());
+        }
     }
 }
