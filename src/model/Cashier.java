@@ -6,7 +6,7 @@ public class Cashier {
     private String nazwisko;
     private String stanowisko;
 
-    public Cashier(String numer, String imie, String nazwisko, String stanowisko) {
+    public Cashier( String numer, String imie, String nazwisko, String stanowisko) {
         this.numer = numer;
         this.imie = imie;
         this.nazwisko = nazwisko;
@@ -36,7 +36,7 @@ public class Cashier {
         return nazwisko;
     }
 
-    public void setNazwisko(String nazwisko) {
+    public void setNazwisko( String nazwisko ) {
         this.nazwisko = nazwisko;
     }
 

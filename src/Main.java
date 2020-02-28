@@ -6,21 +6,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-     //   String nazwa, String opis, Double cena, Boolean czyTrzebaWazyc, String kodKreskowy
-        Product product1 = new Product("ser","ser",50.00,false,"aW4835");
-        Product product2 = new Product("woda","niegazowana",5.0,false,"aW3523");
-        Product product3 = new Product("Kawa","Ziarna",30.0,false,"aEr343");
-        List<Product>listOfProtucts = new ArrayList<>();
-        listOfProtucts.add(product1);
-        listOfProtucts.add(product2);
-        listOfProtucts.add(product3);
+    public static void main( String[] args ) {
+        //String nazwa, String opis, double cena, Boolean czyTrzebaWazyc, String kodKreskowy
+        Product product1 =
+                new Product("Ser", "Ser",
+                        50.0, true, "aSER20");
 
+        Product product2 =
+                new Product("Woda", "Niegazowana",
+                        5.0, false, "aWODA20");
 
+        Product product3 =
+                new Product("Kawa", "Ziarna",
+                        30.0, false, "aKAWA20");
 
+        List<Product> listOfProducts = new ArrayList<>();
+        listOfProducts.add(product1);
+        listOfProducts.add(product2);
+        listOfProducts.add(product3);
 
-        ShoppingBasket shoppingBasket= new ShoppingBasket(listOfProtucts);
+        ShoppingBasket shoppingBasket = new ShoppingBasket(listOfProducts);
+
         ShoppingBasketService service = new ShoppingBasketService();
         System.out.println(service.totalPrice(shoppingBasket));
-            }
+
+
+
+    }
 }
