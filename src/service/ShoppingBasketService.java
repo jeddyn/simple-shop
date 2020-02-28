@@ -10,11 +10,12 @@ public class ShoppingBasketService {
 
     public double totalPrice( ShoppingBasket shoppingBasket ) {
         List<Product> listOfProducts = shoppingBasket.getListaProduktów();
+        double totalPrice = 0;
 
-//        for()
+        for (int i = 0; i < listOfProducts.size(); i++) {
+            totalPrice += listOfProducts.get(i).getCena();
+        }
 
-
-
-        return 0;
+        return totalPrice;
     }
 }

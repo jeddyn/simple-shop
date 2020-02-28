@@ -4,7 +4,7 @@ public class Product {
 
     private String  nazwa;
     private String  opis;
-    private double cena;
+    private double  cena;
     private Boolean  czyTrzebaWazyc;
     private String  kodKreskowy;
 
