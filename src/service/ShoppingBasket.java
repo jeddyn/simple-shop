@@ -1,7 +1,30 @@
-package service;
+package model;
+
+import java.util.List;
 
 public class ShoppingBasket {
-    public double totalPrice(ShoppingBasket shoppingBasket){
-        return 0.0;
+
+List<Product> listaProduktów;
+
+    public ShoppingBasket(List<Product> listaProduktów) {
+        this.listaProduktów = listaProduktów;
+    }
+
+    public ShoppingBasket() {
+    }
+
+    public List<Product> getListaProduktów() {
+        return listaProduktów;
+    }
+
+    public void setListaProduktów(List<Product> listaProduktów) {
+        this.listaProduktów = listaProduktów;
+    }
+
+    @Override
+    public String toString() {
+        return "Koszyk{" +
+                ", listaProduktów=" + listaProduktów + '}';
     }
 }
+
