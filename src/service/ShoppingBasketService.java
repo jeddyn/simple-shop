@@ -18,4 +18,11 @@ public class ShoppingBasketService {
 
         return totalPrice;
     }
+    public  void printAllProductsName(ShoppingBasket shoppingBasket){
+        List<Product> listOfProducts = shoppingBasket.getListaProduktów();
+        for (int i = 0; i < listOfProducts.size(); i++) {
+            System.out.println(listOfProducts.get(i).getNazwa());
+        }
+
+    }
 }

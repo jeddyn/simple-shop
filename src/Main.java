@@ -30,7 +30,7 @@ public class Main {
         ShoppingBasketService service = new ShoppingBasketService();
         System.out.println(service.totalPrice(shoppingBasket));
 
-
+service.printAllProductsName(shoppingBasket);
 
     }
 }
