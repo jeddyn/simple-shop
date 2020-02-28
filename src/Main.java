@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
         //String nazwa, String opis, double cena, Boolean czyTrzebaWazyc, String kodKreskowy
         Product product1 =
                 new Product("Ser", "Ser",
@@ -17,8 +17,8 @@ public class Main {
                         5.0, false, "aWODA20");
 
         Product product3 =
-                new Product("Kawa", "Ziarna",
-                        30.0, false, "aKAWA20");
+                new Product("Kawa", "Sypana",
+                        3000.0, false, "aKAWA20");
 
         List<Product> listOfProducts = new ArrayList<>();
         listOfProducts.add(product1);
@@ -29,7 +29,7 @@ public class Main {
 
         ShoppingBasketService service = new ShoppingBasketService();
         System.out.println(service.totalPrice(shoppingBasket));
-
+        service.printAllProductsName(shoppingBasket);
 
 
     }

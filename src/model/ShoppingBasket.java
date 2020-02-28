@@ -13,7 +13,7 @@ public class ShoppingBasket {
     public ShoppingBasket() {
     }
 
-    public List<Product> getListaProduktów() {
+    public List<Product> getListOfProducts() {
         return listaProduktów;
     }
 

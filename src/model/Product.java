@@ -20,7 +20,7 @@ public class Product {
     public Product() {
     }
 
-    public String getNazwa() {
+    public String getName() {
         return nazwa;
     }
 
@@ -36,7 +36,7 @@ public class Product {
         this.opis = opis;
     }
 
-    public double getCena() {
+    public double getPrice() {
         return cena;
     }
 
