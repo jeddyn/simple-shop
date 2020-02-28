@@ -2,49 +2,49 @@ package model;
 import java.util.List;
 public class CashRegister {
 
-private String numer;
-    private String paragon;
-   List<Product>listaKodowKreskowych ;
+private String number;
+    private String receipt;
+   List<Product> listOfProducts;
 
     public CashRegister(String numer, String paragon, List<Product> listaKodowKreskowych) {
-        this.numer = numer;
-        this.paragon = paragon;
-        this.listaKodowKreskowych = listaKodowKreskowych;
+        this.number = numer;
+        this.receipt = paragon;
+        this.listOfProducts = listaKodowKreskowych;
     }
 
     public CashRegister() {
     }
 
-    public String getNumer() {
-        return numer;
+    public String getNumber() {
+        return number;
     }
 
-    public void setNumer(String numer) {
-        this.numer = numer;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
-    public String getParagon() {
-        return paragon;
+    public String getReceipt() {
+        return receipt;
     }
 
-    public void setParagon(String paragon) {
-        this.paragon = paragon;
+    public void setReceipt(String receipt) {
+        this.receipt = receipt;
     }
 
-    public List<Product> getListaKodowKreskowych() {
-        return listaKodowKreskowych;
+    public List<Product> getListOfProducts() {
+        return listOfProducts;
     }
 
-    public void setListaKodowKreskowych(List<Product> listaKodowKreskowych) {
-        this.listaKodowKreskowych = listaKodowKreskowych;
+    public void setListOfProducts(List<Product> listOfProducts) {
+        this.listOfProducts = listOfProducts;
     }
 
     @Override
     public String toString() {
         return "Kasa{" +
-                "numer='" + numer + '\'' +
-                ", paragon='" + paragon + '\'' +
-                ", listaKodowKreskowych=" + listaKodowKreskowych +
+                "numer='" + number + '\'' +
+                ", paragon='" + receipt + '\'' +
+                ", listaKodowKreskowych=" + listOfProducts +
                 '}';
     }
 }
