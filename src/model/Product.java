@@ -2,18 +2,18 @@ package model;
 
 public class Product {
 
-    private String  nazwa;
-    private String  opis;
-    private String  cena;
-    private Boolean  czyTrzebaWazyc;
-    private String  kodKreskowy;
+    private String nazwa;
+    private String opis;
+    private double cena;
+    private Boolean czyTrzebaWazyc;
+    private String kodKreskowy;
 
-    public Product(String nazwa, String opis, String cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
-        this.nazwa = nazwa;
-        this.opis = opis;
-        this.cena = cena;
-        this.czyTrzebaWazyc = czyTrzebaWazyc;
-        this.kodKreskowy = kodKreskowy;
+    public Product(String nazwa, String opis, double cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
+        this.nazwa=nazwa;
+        this.opis=opis;
+        this.cena=cena;
+        this.czyTrzebaWazyc=czyTrzebaWazyc;
+        this.kodKreskowy=kodKreskowy;
 
     }
 
@@ -25,7 +25,7 @@ public class Product {
     }
 
     public void setNazwa(String nazwa) {
-        this.nazwa = nazwa;
+        this.nazwa=nazwa;
     }
 
     public String getOpis() {
@@ -33,15 +33,15 @@ public class Product {
     }
 
     public void setOpis(String opis) {
-        this.opis = opis;
+        this.opis=opis;
     }
 
-    public String getCena() {
+    public double getCena() {
         return cena;
     }
 
-    public void setCena(String cena) {
-        this.cena = cena;
+    public void setCena(double cena) {
+        this.cena=cena;
     }
 
     public Boolean getCzyTrzebaWazyc() {
@@ -49,7 +49,7 @@ public class Product {
     }
 
     public void setCzyTrzebaWazyc(Boolean czyTrzebaWazyc) {
-        this.czyTrzebaWazyc = czyTrzebaWazyc;
+        this.czyTrzebaWazyc=czyTrzebaWazyc;
     }
 
     public String getKodKreskowy() {
@@ -57,7 +57,7 @@ public class Product {
     }
 
     public void setKodKreskowy(String kodKreskowy) {
-        this.kodKreskowy = kodKreskowy;
+        this.kodKreskowy=kodKreskowy;
     }
 
     @Override
