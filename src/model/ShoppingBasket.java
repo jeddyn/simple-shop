@@ -4,9 +4,9 @@ import java.util.List;
 
 public class ShoppingBasket {
 
-List<Product> listaProduktów;
+    List<Product> listaProduktów;
 
-    public ShoppingBasket(List<Product> listaProduktów) {
+    public ShoppingBasket( List<Product> listaProduktów ) {
         this.listaProduktów = listaProduktów;
     }
 
@@ -17,7 +17,7 @@ List<Product> listaProduktów;
         return listaProduktów;
     }
 
-    public void setListaProduktów(List<Product> listaProduktów) {
+    public void setListaProduktów( List<Product> listaProduktów ) {
         this.listaProduktów = listaProduktów;
     }
 

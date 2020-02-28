@@ -20,9 +20,6 @@ public class Product {
     public Product() {
     }
 
-    public Product(String Nazwa, double cena, String tak, String a32143sd) {
-    }
-
     public String getNazwa() {
         return nazwa;
     }
@@ -38,6 +35,7 @@ public class Product {
     public void setOpis(String opis) {
         this.opis = opis;
     }
+
     public double getCena() {
         return cena;
     }
