@@ -1,60 +1,60 @@
 package model;
 
 public class Cashier {
-    private String numer;
-    private String imie;
-    private String nazwisko;
-    private String stanowisko;
+    private String number;
+    private String name;
+    private String surname;
+    private String position;
 
     public Cashier( String numer, String imie, String nazwisko, String stanowisko) {
-        this.numer = numer;
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.stanowisko = stanowisko;
+        this.number = numer;
+        this.name = imie;
+        this.surname = nazwisko;
+        this.position = stanowisko;
     }
 
     public Cashier() {
     }
 
-    public String getNumer() {
-        return numer;
+    public String getNumber() {
+        return number;
     }
 
-    public void setNumer(String numer) {
-        this.numer = numer;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
-    public String getImie() {
-        return imie;
+    public String getName() {
+        return name;
     }
 
-    public void setImie(String imie) {
-        this.imie = imie;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getNazwisko() {
-        return nazwisko;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setNazwisko( String nazwisko ) {
-        this.nazwisko = nazwisko;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
-    public String getStanowisko() {
-        return stanowisko;
+    public String getPosition() {
+        return position;
     }
 
-    public void setStanowisko(String stanowisko) {
-        this.stanowisko = stanowisko;
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     @Override
     public String toString() {
         return "Kasjer{" +
-                "numer='" + numer + '\'' +
-                ", imie='" + imie + '\'' +
-                ", nazwiso='" + nazwisko + '\'' +
-                ", stanowisko='" + stanowisko + '\'' +
+                "numer='" + number + '\'' +
+                ", imie='" + name + '\'' +
+                ", nazwiso='" + surname + '\'' +
+                ", stanowisko='" + position + '\'' +
                 '}';
     }
 }

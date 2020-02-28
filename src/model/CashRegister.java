@@ -2,25 +2,25 @@ package model;
 import java.util.List;
 public class CashRegister {
 
-private String numer;
+private String number;
     private String paragon;
-   List<Product>listaKodowKreskowych ;
+   List<Product> listOfProducts;
 
     public CashRegister(String numer, String paragon, List<Product> listaKodowKreskowych) {
-        this.numer = numer;
+        this.number = numer;
         this.paragon = paragon;
-        this.listaKodowKreskowych = listaKodowKreskowych;
+        this.listOfProducts = listaKodowKreskowych;
     }
 
     public CashRegister() {
     }
 
-    public String getNumer() {
-        return numer;
+    public String getNumber() {
+        return number;
     }
 
-    public void setNumer(String numer) {
-        this.numer = numer;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public String getParagon() {
@@ -31,20 +31,20 @@ private String numer;
         this.paragon = paragon;
     }
 
-    public List<Product> getListaKodowKreskowych() {
-        return listaKodowKreskowych;
+    public List<Product> getListOfProducts() {
+        return listOfProducts;
     }
 
-    public void setListaKodowKreskowych(List<Product> listaKodowKreskowych) {
-        this.listaKodowKreskowych = listaKodowKreskowych;
+    public void setListOfProducts(List<Product> listOfProducts) {
+        this.listOfProducts = listOfProducts;
     }
 
     @Override
     public String toString() {
         return "Kasa{" +
-                "numer='" + numer + '\'' +
+                "numer='" + number + '\'' +
                 ", paragon='" + paragon + '\'' +
-                ", listaKodowKreskowych=" + listaKodowKreskowych +
+                ", listaKodowKreskowych=" + listOfProducts +
                 '}';
     }
 }
