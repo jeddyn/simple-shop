@@ -2,49 +2,49 @@ package model;
 
 public class CreditCard {
 
-    private String kodCVV;
-    private String numerKarty;
-    private String dataOdKiedyWażna;
+    private String CCVCode;
+    private String creditCardNumber;
+    private String date;
 
-    public CreditCard(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
-        this.kodCVV = kodCVV;
-        this.numerKarty = numerKarty;
-        this.dataOdKiedyWażna = dataOdKiedyWażna;
+    public CreditCard( String CCVCode, String numerKarty, String dataOdKiedyWażna) {
+        this.CCVCode = CCVCode;
+        this.creditCardNumber = numerKarty;
+        this.date = dataOdKiedyWażna;
     }
 
     public CreditCard() {
     }
 
-    public String getKodCVV() {
-        return kodCVV;
+    public String getCCVCode() {
+        return CCVCode;
     }
 
-    public void setKodCVV(String kodCVV) {
-        this.kodCVV = kodCVV;
+    public void setCCVCode( String CCVCode ) {
+        this.CCVCode = CCVCode;
     }
 
-    public String getNumerKarty() {
-        return numerKarty;
+    public String getCreditCardNumber() {
+        return creditCardNumber;
     }
 
-    public void setNumerKarty(String numerKarty) {
-        this.numerKarty = numerKarty;
+    public void setCreditCardNumber( String creditCardNumber ) {
+        this.creditCardNumber = creditCardNumber;
     }
 
-    public String getDataOdKiedyWażna() {
-        return dataOdKiedyWażna;
+    public String getDate() {
+        return date;
     }
 
-    public void setDataOdKiedyWażna(String dataOdKiedyWażna) {
-        this.dataOdKiedyWażna = dataOdKiedyWażna;
+    public void setDate( String date ) {
+        this.date = date;
     }
 
     @Override
     public String toString() {
-        return "KartaPłatnicza{" +
-                "kodCVV='" + kodCVV + '\'' +
-                ", numerKarty='" + numerKarty + '\'' +
-                ", dataOdKiedyWażna='" + dataOdKiedyWażna + '\'' +
+        return "CreditCard{" +
+                "CCVCode='" + CCVCode + '\'' +
+                ", creditCardNumber='" + creditCardNumber + '\'' +
+                ", date='" + date + '\'' +
                 '}';
     }
 }

@@ -1,12 +1,14 @@
 package model;
+
 import java.util.List;
+
 public class CashRegister {
 
-private String number;
+    private String number;
     private String receipt;
-   List<Product> listOfProducts;
+    private List<Product> listOfProducts;
 
-    public CashRegister(String number, String receipt, List<Product> listOfProducts) {
+    public CashRegister( String number, String receipt, List<Product> listOfProducts ) {
         this.number = number;
         this.receipt = receipt;
         this.listOfProducts = listOfProducts;
@@ -19,7 +21,7 @@ private String number;
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber( String number ) {
         this.number = number;
     }
 
@@ -27,7 +29,7 @@ private String number;
         return receipt;
     }
 
-    public void setReceipt(String receipt) {
+    public void setReceipt( String receipt ) {
         this.receipt = receipt;
     }
 
@@ -35,16 +37,16 @@ private String number;
         return listOfProducts;
     }
 
-    public void setListOfProducts(List<Product> listOfProducts) {
+    public void setListOfProducts( List<Product> listOfProducts ) {
         this.listOfProducts = listOfProducts;
     }
 
     @Override
     public String toString() {
-        return "Kasa{" +
-                "numer='" + number + '\'' +
-                ", paragon='" + receipt + '\'' +
-                ", listaKodowKreskowych=" + listOfProducts +
+        return "CashRegister{" +
+                "number='" + number + '\'' +
+                ", receipt='" + receipt + '\'' +
+                ", listOfProducts=" + listOfProducts +
                 '}';
     }
 }

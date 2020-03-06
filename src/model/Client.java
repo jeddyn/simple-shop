@@ -3,13 +3,13 @@ package model;
 public class Client {
 
 private String  kartaPlatnicza;
-    private String  Koszyk;
-    private double  gotowka;
+    private String shoopingBasket;
+    private double cash;
 //test
     public Client(String kartaPlatnicza, String koszyk, double gotowka) {
         this.kartaPlatnicza = kartaPlatnicza;
-        Koszyk = koszyk;
-        this.gotowka = gotowka;
+        shoopingBasket = koszyk;
+        this.cash = gotowka;
     }
 
     public Client() {
@@ -23,28 +23,28 @@ private String  kartaPlatnicza;
         this.kartaPlatnicza = kartaPlatnicza;
     }
 
-    public String getKoszyk() {
-        return Koszyk;
+    public String getShoopingBasket() {
+        return shoopingBasket;
     }
 
-    public void setKoszyk(String koszyk) {
-        Koszyk = koszyk;
+    public void setShoopingBasket( String shoopingBasket ) {
+        this.shoopingBasket = shoopingBasket;
     }
 
-    public double getGotowka() {
-        return gotowka;
+    public double getCash() {
+        return cash;
     }
 
-    public void setGotowka(double gotowka) {
-        this.gotowka = gotowka;
+    public void setCash( double cash ) {
+        this.cash = cash;
     }
 
     @Override
     public String toString() {
-        return "Klient{" +
+        return "Client{" +
                 "kartaPlatnicza='" + kartaPlatnicza + '\'' +
-                ", Koszyk='" + Koszyk + '\'' +
-                ", gotowka=" + gotowka +
+                ", shoopingBasket='" + shoopingBasket + '\'' +
+                ", cash=" + cash +
                 '}';
     }
 }
