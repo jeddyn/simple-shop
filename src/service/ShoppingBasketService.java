@@ -31,11 +31,10 @@ public class ShoppingBasketService {
 
 
     }
-    public void Rabat(ShoppingBasket shoppingBasket) {
+    public void Rabat(ShoppingBasket shoppingBasket, double rabat) {
 
-      double wysokoscRabatu = 10;
 
-        double zwrot =totalPrice(shoppingBasket)*0.01*wysokoscRabatu;
+        double zwrot =totalPrice(shoppingBasket)*0.01*rabat;
         System.out.format("%.2f%n", zwrot);
         }
 
