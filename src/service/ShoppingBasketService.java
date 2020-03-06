@@ -23,4 +23,11 @@ public class ShoppingBasketService {
             System.out.println(listOfProducts.get(i).getName());
         }
     }
+
+    public double rabat(int percentage){
+        return 0.0;
+    }
+
+    public void checkCardValidation(){
+    }
 }
