@@ -10,15 +10,15 @@ public class Main {
         //String nazwa, String opis, double cena, Boolean czyTrzebaWazyc, String kodKreskowy
         Product product1 =
                 new Product("Ser", "Ser",
-                        50.0, true, "aSER20");
+                        49.99, true, "aSER20");
 
         Product product2 =
                 new Product("Woda", "Niegazowana",
-                        5.0, false, "aWODA20");
+                        1.0, false, "aWODA20");
 
         Product product3 =
                 new Product("Kawa", "Ziarna",
-                        30.0, false, "aKAWA20");
+                        5.0, false, "aKAWA20");
 
         List<Product> listOfProducts = new ArrayList<>();
         listOfProducts.add(product1);

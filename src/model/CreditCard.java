@@ -2,49 +2,49 @@ package model;
 
 public class CreditCard {
 
-    private String kodCVV;
-    private String numerKarty;
-    private String dataOdKiedyWażna;
+    private String cardCode;
+    private String cardNumber;
+    private String expirationDate;
 
-    public CreditCard(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
-        this.kodCVV = kodCVV;
-        this.numerKarty = numerKarty;
-        this.dataOdKiedyWażna = dataOdKiedyWażna;
+    public CreditCard(String cardCode, String cardNumber, String dataOdKiedyWażna) {
+        this.cardCode = cardCode;
+        this.cardNumber = cardNumber;
+        this.expirationDate = dataOdKiedyWażna;
     }
 
     public CreditCard() {
     }
 
-    public String getKodCVV() {
-        return kodCVV;
+    public String getCardCode() {
+        return cardCode;
     }
 
-    public void setKodCVV(String kodCVV) {
-        this.kodCVV = kodCVV;
+    public void setCardCode(String cardCode) {
+        this.cardCode = cardCode;
     }
 
-    public String getNumerKarty() {
-        return numerKarty;
+    public String getCardNumber() {
+        return cardNumber;
     }
 
-    public void setNumerKarty(String numerKarty) {
-        this.numerKarty = numerKarty;
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
     }
 
     public String getDataOdKiedyWażna() {
-        return dataOdKiedyWażna;
+        return expirationDate;
     }
 
     public void setDataOdKiedyWażna(String dataOdKiedyWażna) {
-        this.dataOdKiedyWażna = dataOdKiedyWażna;
+        this.expirationDate = dataOdKiedyWażna;
     }
 
     @Override
     public String toString() {
-        return "KartaPłatnicza{" +
-                "kodCVV='" + kodCVV + '\'' +
-                ", numerKarty='" + numerKarty + '\'' +
-                ", dataOdKiedyWażna='" + dataOdKiedyWażna + '\'' +
+        return "CreditCard{" +
+                "cardCode='" + cardCode + '\'' +
+                ", cardNumber='" + cardNumber + '\'' +
+                ", expirationDate='" + expirationDate + '\'' +
                 '}';
     }
 }

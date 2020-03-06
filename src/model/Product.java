@@ -2,72 +2,72 @@ package model;
 
 public class Product {
 
-    private String  nazwa;
-    private String  opis;
-    private double  cena;
-    private Boolean  czyTrzebaWazyc;
-    private String  kodKreskowy;
+    private String name;
+    private String description;
+    private double price;
+    private Boolean doYouNeedToWeighIt;
+    private String barcode;
 
-    public Product(String nazwa, String opis, double cena, Boolean czyTrzebaWazyc, String kodKreskowy) {
-        this.nazwa = nazwa;
-        this.opis = opis;
-        this.cena = cena;
-        this.czyTrzebaWazyc = czyTrzebaWazyc;
-        this.kodKreskowy = kodKreskowy;
+    public Product(String name, String description, double price, Boolean doYouNeedToWeighIt, String barcode) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.doYouNeedToWeighIt = doYouNeedToWeighIt;
+        this.barcode = barcode;
 
     }
 
     public Product() {
     }
 
-    public String getNazwa() {
-        return nazwa;
+    public String getName() {
+        return name;
     }
 
-    public void setNazwa(String nazwa) {
-        this.nazwa = nazwa;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getOpis() {
-        return opis;
+    public String getDescription() {
+        return description;
     }
 
-    public void setOpis(String opis) {
-        this.opis = opis;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public double getCena() {
-        return cena;
+    public double getPrice() {
+        return price;
     }
 
-    public void setCena(double cena) {
-        this.cena = cena;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public Boolean getCzyTrzebaWazyc() {
-        return czyTrzebaWazyc;
+    public Boolean getDoYouNeedToWeighIt() {
+        return doYouNeedToWeighIt;
     }
 
-    public void setCzyTrzebaWazyc(Boolean czyTrzebaWazyc) {
-        this.czyTrzebaWazyc = czyTrzebaWazyc;
+    public void setDoYouNeedToWeighIt(Boolean doYouNeedToWeighIt) {
+        this.doYouNeedToWeighIt = doYouNeedToWeighIt;
     }
 
-    public String getKodKreskowy() {
-        return kodKreskowy;
+    public String getBarcode() {
+        return barcode;
     }
 
-    public void setKodKreskowy(String kodKreskowy) {
-        this.kodKreskowy = kodKreskowy;
+    public void setBarcode(String barcode) {
+        this.barcode = barcode;
     }
 
     @Override
     public String toString() {
-        return "Produkt{" +
-                "nazwa='" + nazwa + '\'' +
-                ", opis='" + opis + '\'' +
-                ", cena='" + cena + '\'' +
-                ", czyTrzebaWazyc=" + czyTrzebaWazyc +
-                ", kodKreskowy='" + kodKreskowy + '\'' +
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", doYouNeedToWeighIt=" + doYouNeedToWeighIt +
+                ", barcode='" + barcode + '\'' +
                 '}';
     }
 }

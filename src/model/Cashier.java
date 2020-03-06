@@ -50,11 +50,11 @@ public class Cashier {
 
     @Override
     public String toString() {
-        return "Kasjer{" +
-                "numer='" + number + '\'' +
-                ", imie='" + name + '\'' +
-                ", nazwiso='" + surname + '\'' +
-                ", stanowisko='" + position + '\'' +
+        return "Cashier{" +
+                "number='" + number + '\'' +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", position='" + position + '\'' +
                 '}';
     }
 }
