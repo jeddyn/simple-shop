@@ -6,10 +6,10 @@ private String number;
     private String receipt;
    List<Product> listOfProducts;
 
-    public CashRegister(String numer, String paragon, List<Product> listaKodowKreskowych) {
-        this.number = numer;
-        this.receipt = paragon;
-        this.listOfProducts = listaKodowKreskowych;
+    public CashRegister(String number, String receipt, List<Product> listOfProducts) {
+        this.number = number;
+        this.receipt = receipt;
+        this.listOfProducts = listOfProducts;
     }
 
     public CashRegister() {
@@ -41,10 +41,10 @@ private String number;
 
     @Override
     public String toString() {
-        return "Kasa{" +
-                "numer='" + number + '\'' +
-                ", paragon='" + receipt + '\'' +
-                ", listaKodowKreskowych=" + listOfProducts +
+        return "CashRegister{" +
+                "number='" + number + '\'' +
+                ", receipt='" + receipt + '\'' +
+                ", listOfProducts=" + listOfProducts +
                 '}';
     }
 }

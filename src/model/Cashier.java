@@ -6,11 +6,11 @@ public class Cashier {
     private String surname;
     private String position;
 
-    public Cashier(String numer, String imie, String nazwiso, String stanowisko) {
-        this.number = numer;
-        this.name = imie;
-        this.surname = nazwiso;
-        this.position = stanowisko;
+    public Cashier(String number, String name, String surname, String position) {
+        this.number = number;
+        this.name = name;
+        this.surname = surname;
+        this.position = position;
     }
 
     public Cashier() {
@@ -50,11 +50,11 @@ public class Cashier {
 
     @Override
     public String toString() {
-        return "Kasjer{" +
-                "numer='" + number + '\'' +
-                ", imie='" + name + '\'' +
-                ", nazwiso='" + surname + '\'' +
-                ", stanowisko='" + position + '\'' +
+        return "Cashier{" +
+                "number='" + number + '\'' +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", position='" + position + '\'' +
                 '}';
     }
 }
