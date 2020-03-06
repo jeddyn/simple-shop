@@ -3,12 +3,12 @@ package model;
 public class CreditCard {
 
     private String CVVcode;
-    private String CardNumber;
+    private String creditCardNumber;
     private String ExpDate;
 
     public CreditCard(String CVVcode, String CardNumber, String dataOdKExpDateiedyWażna) {
         this.CVVcode = CVVcode;
-        this.CardNumber = CardNumber;
+        this.creditCardNumber = CardNumber;
         this.ExpDate = ExpDate;
     }
 
@@ -23,12 +23,12 @@ public class CreditCard {
         this.CVVcode = CVVcode;
     }
 
-    public String getCardNumber() {
-        return CardNumber;
+    public String getCreditCardNumber() {
+        return creditCardNumber;
     }
 
-    public void setCardNumber(String cardNumber) {
-        this.CardNumber = cardNumber;
+    public void setCreditCardNumber(String creditCardNumber) {
+        this.creditCardNumber = creditCardNumber;
     }
 
     public String getExpDate() {
@@ -43,7 +43,7 @@ public class CreditCard {
     public String toString() {
         return "CreditCard{" +
                 "CVVcode='" + CVVcode + '\'' +
-                ", CardNumber='" + CardNumber + '\'' +
+                ", CardNumber='" + creditCardNumber + '\'' +
                 ", ExpDate='" + ExpDate + '\'' +
                 '}';
     }

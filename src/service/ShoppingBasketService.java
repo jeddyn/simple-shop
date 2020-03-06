@@ -23,11 +23,23 @@ public class ShoppingBasketService {
 
         for (int i = 0; i < listOfProduct.size(); i++) {
 
+
+
             System.out.println(listOfProduct.get(i).getName());
 
         }
 
 
     }
-}
+    public void Rabat(ShoppingBasket shoppingBasket) {
+
+      double wysokoscRabatu = 10;
+
+        double zwrot =totalPrice(shoppingBasket)*0.01*wysokoscRabatu;
+        System.out.format("%.2f%n", zwrot);
+        }
+
+
+    }
+
 
