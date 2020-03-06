@@ -2,33 +2,34 @@ package model;
 
 public class Client {
 
-private String  kartaPlatnicza;
-    private String shoopingBasket;
+    private CreditCard creditCard;
+    private ShoppingBasket shoppingBasket;
     private double cash;
-//test
-    public Client(String kartaPlatnicza, String koszyk, double gotowka) {
-        this.kartaPlatnicza = kartaPlatnicza;
-        shoopingBasket = koszyk;
-        this.cash = gotowka;
+
+    //test
+    public Client( CreditCard creditCard, ShoppingBasket shoppingBasket, double cash ) {
+        this.creditCard = creditCard;
+        this.shoppingBasket = shoppingBasket;
+        this.cash = cash;
     }
 
     public Client() {
     }
 
-    public String getKartaPlatnicza() {
-        return kartaPlatnicza;
+    public CreditCard getCreditCard() {
+        return creditCard;
     }
 
-    public void setKartaPlatnicza(String kartaPlatnicza) {
-        this.kartaPlatnicza = kartaPlatnicza;
+    public void setCreditCard( CreditCard creditCard ) {
+        this.creditCard = creditCard;
     }
 
-    public String getShoopingBasket() {
-        return shoopingBasket;
+    public ShoppingBasket getShoppingBasket() {
+        return shoppingBasket;
     }
 
-    public void setShoopingBasket( String shoopingBasket ) {
-        this.shoopingBasket = shoopingBasket;
+    public void setShoppingBasket( ShoppingBasket shoppingBasket ) {
+        this.shoppingBasket = shoppingBasket;
     }
 
     public double getCash() {
@@ -42,8 +43,8 @@ private String  kartaPlatnicza;
     @Override
     public String toString() {
         return "Client{" +
-                "kartaPlatnicza='" + kartaPlatnicza + '\'' +
-                ", shoopingBasket='" + shoopingBasket + '\'' +
+                "kartaPlatnicza='" + creditCard + '\'' +
+                ", shoopingBasket='" + shoppingBasket + '\'' +
                 ", cash=" + cash +
                 '}';
     }

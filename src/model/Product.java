@@ -8,12 +8,12 @@ public class Product {
     private Boolean isWeight;
     private String productCode;
 
-    public Product( String name, String description, double price, Boolean isWeight, String kodKreskowy) {
+    public Product( String name, String description, double price, Boolean isWeight, String productCode) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.isWeight = isWeight;
-        this.productCode = kodKreskowy;
+        this.productCode = productCode;
 
     }
 

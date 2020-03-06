@@ -17,9 +17,9 @@ public class ShoppingBasketService {
         return totalPrice;
     }
 
-    public void printAllProductsName(ShoppingBasket shoppingBasket){
+    public void printAllProductsName( ShoppingBasket shoppingBasket ) {
         List<Product> listOfProducts = shoppingBasket.getListOfProducts();
-        for (int i = 0; i < listOfProducts.size(); i++){
+        for (int i = 0; i < listOfProducts.size(); i++) {
             System.out.println(listOfProducts.get(i).getName());
         }
     }

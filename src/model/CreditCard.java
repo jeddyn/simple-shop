@@ -6,10 +6,10 @@ public class CreditCard {
     private String creditCardNumber;
     private String date;
 
-    public CreditCard( String CCVCode, String numerKarty, String dataOdKiedyWażna) {
+    public CreditCard( String CCVCode, String creditCardNumber, String date) {
         this.CCVCode = CCVCode;
-        this.creditCardNumber = numerKarty;
-        this.date = dataOdKiedyWażna;
+        this.creditCardNumber = creditCardNumber;
+        this.date = date;
     }
 
     public CreditCard() {

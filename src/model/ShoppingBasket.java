@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ShoppingBasket {
 
-    List<Product> listOfProducts;
+    private List<Product> listOfProducts;
 
     public ShoppingBasket( List<Product> listOfProducts ) {
         this.listOfProducts = listOfProducts;
