@@ -3,7 +3,6 @@ package service;
 import model.Product;
 import model.ShoppingBasket;
 
-import java.net.SocketOption;
 import java.util.List;
 
 public class ShoppingBasketService {
@@ -27,8 +26,8 @@ public class ShoppingBasketService {
 
 
         for (int i = 0; i < listOfProducts.size(); i++) {
-             listOfProducts.get(i).getNazwa();
-            System.out.println(listOfProducts.get(i).getNazwa());
+             listOfProducts.get(i).getName();
+            System.out.println(listOfProducts.get(i).getName());
         }
 
     }

@@ -2,49 +2,50 @@ package model;
 
 public class CreditCard {
 
-    private String kodCVV;
-    private String numerKarty;
-    private String dataOdKiedyWażna;
+    private String codeCvv;
+    private String cardnumber;
+    private String sinceitisvalid;
 
-    public CreditCard(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
-        this.kodCVV = kodCVV;
-        this.numerKarty = numerKarty;
-        this.dataOdKiedyWażna = dataOdKiedyWażna;
+    public CreditCard(String codeCvv, String cardnumber, String sinceitisvalid) {
+        this.codeCvv = codeCvv;
+        this.cardnumber = cardnumber;
+        this.sinceitisvalid = sinceitisvalid;
     }
 
     public CreditCard() {
     }
 
     public String getKodCVV() {
-        return kodCVV;
+        return codeCvv;
     }
 
     public void setKodCVV(String kodCVV) {
-        this.kodCVV = kodCVV;
+        this.codeCvv = kodCVV;
     }
 
     public String getNumerKarty() {
-        return numerKarty;
+        return cardnumber;
     }
 
     public void setNumerKarty(String numerKarty) {
-        this.numerKarty = numerKarty;
+        this.cardnumber = numerKarty;
     }
 
-    public String getDataOdKiedyWażna() {
-        return dataOdKiedyWażna;
+    public String getSinceitisvalid() {
+        return sinceitisvalid;
     }
 
-    public void setDataOdKiedyWażna(String dataOdKiedyWażna) {
-        this.dataOdKiedyWażna = dataOdKiedyWażna;
+    public void setSinceitisvalid(String sinceitisvalid) {
+        this.sinceitisvalid = sinceitisvalid;
     }
 
     @Override
     public String toString() {
-        return "KartaPłatnicza{" +
-                "kodCVV='" + kodCVV + '\'' +
-                ", numerKarty='" + numerKarty + '\'' +
-                ", dataOdKiedyWażna='" + dataOdKiedyWażna + '\'' +
+        return "CreditCard{" +
+                "codeCvv='" + codeCvv + '\'' +
+                ", cardnumber='" + cardnumber + '\'' +
+                ", sinceitisvalid='" + sinceitisvalid + '\'' +
                 '}';
     }
 }
+

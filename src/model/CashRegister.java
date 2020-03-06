@@ -41,10 +41,11 @@ private String number;
 
     @Override
     public String toString() {
-        return "Kasa{" +
-                "numer='" + number + '\'' +
-                ", paragon='" + receipt + '\'' +
-                ", listaKodowKreskowych=" + listofCodes +
+        return "CashRegister{" +
+                "number='" + number + '\'' +
+                ", receipt='" + receipt + '\'' +
+                ", listofCodes=" + listofCodes +
                 '}';
     }
 }
+

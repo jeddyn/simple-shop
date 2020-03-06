@@ -41,10 +41,11 @@ private String card;
 
     @Override
     public String toString() {
-        return "Klient{" +
-                "kartaPlatnicza='" + card + '\'' +
-                ", Koszyk='" + basket + '\'' +
-                ", gotowka=" + cash +
+        return "Client{" +
+                "card='" + card + '\'' +
+                ", basket='" + basket + '\'' +
+                ", cash=" + cash +
                 '}';
     }
 }
+
