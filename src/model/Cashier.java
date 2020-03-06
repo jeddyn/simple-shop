@@ -6,11 +6,11 @@ public class Cashier {
     private String surname;
     private String position;
 
-    public Cashier( String numer, String imie, String nazwisko, String stanowisko) {
-        this.number = numer;
-        this.name = imie;
-        this.surname = nazwisko;
-        this.position = stanowisko;
+    public Cashier(String number, String name, String surname, String position) {
+        this.number = number;
+        this.name = name;
+        this.surname = surname;
+        this.position = position;
     }
 
     public Cashier() {

@@ -2,49 +2,49 @@ package model;
 
 public class CreditCard {
 
-    private String cardCode;
-    private String cardNumber;
-    private String expirationDate;
+    private String CCVCode;
+    private String creditCardNumber;
+    private String date;
 
-    public CreditCard(String cardCode, String cardNumber, String dataOdKiedyWażna) {
-        this.cardCode = cardCode;
-        this.cardNumber = cardNumber;
-        this.expirationDate = dataOdKiedyWażna;
+    public CreditCard( String CCVCode, String creditCardNumber, String date) {
+        this.CCVCode = CCVCode;
+        this.creditCardNumber = creditCardNumber;
+        this.date = date;
     }
 
     public CreditCard() {
     }
 
-    public String getCardCode() {
-        return cardCode;
+    public String getCCVCode() {
+        return CCVCode;
     }
 
-    public void setCardCode(String cardCode) {
-        this.cardCode = cardCode;
+    public void setCCVCode( String CCVCode ) {
+        this.CCVCode = CCVCode;
     }
 
-    public String getCardNumber() {
-        return cardNumber;
+    public String getCreditCardNumber() {
+        return creditCardNumber;
     }
 
-    public void setCardNumber(String cardNumber) {
-        this.cardNumber = cardNumber;
+    public void setCreditCardNumber( String creditCardNumber ) {
+        this.creditCardNumber = creditCardNumber;
     }
 
-    public String getDataOdKiedyWażna() {
-        return expirationDate;
+    public String getDate() {
+        return date;
     }
 
-    public void setDataOdKiedyWażna(String dataOdKiedyWażna) {
-        this.expirationDate = dataOdKiedyWażna;
+    public void setDate( String date ) {
+        this.date = date;
     }
 
     @Override
     public String toString() {
         return "CreditCard{" +
-                "cardCode='" + cardCode + '\'' +
-                ", cardNumber='" + cardNumber + '\'' +
-                ", expirationDate='" + expirationDate + '\'' +
+                "CCVCode='" + CCVCode + '\'' +
+                ", creditCardNumber='" + creditCardNumber + '\'' +
+                ", date='" + date + '\'' +
                 '}';
     }
 }

@@ -1,15 +1,17 @@
 package model;
+
 import java.util.List;
+
 public class CashRegister {
 
-private String number;
-    private String paragon;
-   List<Product> listOfProducts;
+    private String number;
+    private String receipt;
+    private List<Product> listOfProducts;
 
-    public CashRegister(String numer, String paragon, List<Product> listaKodowKreskowych) {
-        this.number = numer;
-        this.paragon = paragon;
-        this.listOfProducts = listaKodowKreskowych;
+    public CashRegister( String number, String receipt, List<Product> listOfProducts ) {
+        this.number = number;
+        this.receipt = receipt;
+        this.listOfProducts = listOfProducts;
     }
 
     public CashRegister() {
@@ -19,23 +21,23 @@ private String number;
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber( String number ) {
         this.number = number;
     }
 
-    public String getParagon() {
-        return paragon;
+    public String getReceipt() {
+        return receipt;
     }
 
-    public void setParagon(String paragon) {
-        this.paragon = paragon;
+    public void setReceipt( String receipt ) {
+        this.receipt = receipt;
     }
 
     public List<Product> getListOfProducts() {
         return listOfProducts;
     }
 
-    public void setListOfProducts(List<Product> listOfProducts) {
+    public void setListOfProducts( List<Product> listOfProducts ) {
         this.listOfProducts = listOfProducts;
     }
 
@@ -43,7 +45,7 @@ private String number;
     public String toString() {
         return "CashRegister{" +
                 "number='" + number + '\'' +
-                ", paragon='" + paragon + '\'' +
+                ", receipt='" + receipt + '\'' +
                 ", listOfProducts=" + listOfProducts +
                 '}';
     }

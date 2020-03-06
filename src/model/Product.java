@@ -5,15 +5,15 @@ public class Product {
     private String name;
     private String description;
     private double price;
-    private Boolean doYouNeedToWeighIt;
-    private String barcode;
+    private Boolean isWeight;
+    private String productCode;
 
-    public Product(String name, String description, double price, Boolean doYouNeedToWeighIt, String barcode) {
+    public Product( String name, String description, double price, Boolean isWeight, String productCode) {
         this.name = name;
         this.description = description;
         this.price = price;
-        this.doYouNeedToWeighIt = doYouNeedToWeighIt;
-        this.barcode = barcode;
+        this.isWeight = isWeight;
+        this.productCode = productCode;
 
     }
 
@@ -24,7 +24,7 @@ public class Product {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName( String name ) {
         this.name = name;
     }
 
@@ -32,7 +32,7 @@ public class Product {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription( String description ) {
         this.description = description;
     }
 
@@ -40,24 +40,24 @@ public class Product {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice( double price ) {
         this.price = price;
     }
 
-    public Boolean getDoYouNeedToWeighIt() {
-        return doYouNeedToWeighIt;
+    public Boolean getIsWeight() {
+        return isWeight;
     }
 
-    public void setDoYouNeedToWeighIt(Boolean doYouNeedToWeighIt) {
-        this.doYouNeedToWeighIt = doYouNeedToWeighIt;
+    public void setIsWeight( Boolean isWeight ) {
+        this.isWeight = isWeight;
     }
 
-    public String getBarcode() {
-        return barcode;
+    public String getProductCode() {
+        return productCode;
     }
 
-    public void setBarcode(String barcode) {
-        this.barcode = barcode;
+    public void setProductCode( String productCode ) {
+        this.productCode = productCode;
     }
 
     @Override
@@ -66,8 +66,8 @@ public class Product {
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price +
-                ", doYouNeedToWeighIt=" + doYouNeedToWeighIt +
-                ", barcode='" + barcode + '\'' +
+                ", isWeight=" + isWeight +
+                ", productCode='" + productCode + '\'' +
                 '}';
     }
 }

@@ -4,27 +4,27 @@ import java.util.List;
 
 public class ShoppingBasket {
 
-List<Product> listOffProducts;
+    private List<Product> listOfProducts;
 
-    public ShoppingBasket(List<Product> listOffProducts) {
-        this.listOffProducts = listOffProducts;
+    public ShoppingBasket( List<Product> listOfProducts ) {
+        this.listOfProducts = listOfProducts;
     }
 
     public ShoppingBasket() {
     }
 
-    public List<Product> getListOffProducts() {
-        return listOffProducts;
+    public List<Product> getListOfProducts() {
+        return listOfProducts;
     }
 
-    public void setListOffProducts(List<Product> listOffProducts) {
-        this.listOffProducts = listOffProducts;
+    public void setListOfProducts( List<Product> listOfProducts ) {
+        this.listOfProducts = listOfProducts;
     }
 
     @Override
     public String toString() {
         return "ShoppingBasket{" +
-                "listOffProducts=" + listOffProducts +
+                "listOfProducts=" + listOfProducts +
                 '}';
     }
 }
