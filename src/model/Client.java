@@ -2,11 +2,11 @@ package model;
 
 public class Client {
 
-private String card;
-    private String basket;
+private CreditCard card;
+    private ShoppingBasket basket;
     private double cash;
 //test
-    public Client(String card, String basket, double cash) {
+    public Client(CreditCard card, ShoppingBasket basket, double cash) {
         this.card = card;
         this.basket = basket;
         this.cash = cash;
@@ -15,19 +15,19 @@ private String card;
     public Client() {
     }
 
-    public String getCard() {
+    public CreditCard getCard() {
         return card;
     }
 
-    public void setCard(String card) {
+    public void setCard(CreditCard card) {
         this.card = card;
     }
 
-    public String getBasket() {
+    public ShoppingBasket getBasket() {
         return basket;
     }
 
-    public void setBasket(String basket) {
+    public void setBasket(ShoppingBasket basket) {
         this.basket = basket;
     }
 

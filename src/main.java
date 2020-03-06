@@ -5,7 +5,7 @@ import service.ShoppingBasketService;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class main {
     public static void main( String[] args ) {
         //String nazwa, String opis, double cena, Boolean czyTrzebaWazyc, String kodKreskowy
         Product product1 =
@@ -14,7 +14,7 @@ public class Main {
 
         Product product2 =
                 new Product("Woda", "Niegazowana",
-                        5.0, false, "aWODA20");
+                        50.0, false, "aWODA20");
 
         Product product3 =
                 new Product("Kawa", "Ziarna",

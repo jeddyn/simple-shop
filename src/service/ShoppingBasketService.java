@@ -30,5 +30,7 @@ public class ShoppingBasketService {
             System.out.println(listOfProducts.get(i).getName());
         }
 
+
+
     }
     }

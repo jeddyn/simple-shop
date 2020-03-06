@@ -2,13 +2,13 @@ package model;
 
 public class CreditCard {
 
-    private String codeCvv;
-    private String cardnumber;
+    private String CCVCode;
+    private String creditCardnumber;
     private String sinceitisvalid;
 
     public CreditCard(String codeCvv, String cardnumber, String sinceitisvalid) {
-        this.codeCvv = codeCvv;
-        this.cardnumber = cardnumber;
+        this.CCVCode = codeCvv;
+        this.creditCardnumber = cardnumber;
         this.sinceitisvalid = sinceitisvalid;
     }
 
@@ -16,19 +16,19 @@ public class CreditCard {
     }
 
     public String getKodCVV() {
-        return codeCvv;
+        return CCVCode;
     }
 
     public void setKodCVV(String kodCVV) {
-        this.codeCvv = kodCVV;
+        this.CCVCode = kodCVV;
     }
 
     public String getNumerKarty() {
-        return cardnumber;
+        return creditCardnumber;
     }
 
     public void setNumerKarty(String numerKarty) {
-        this.cardnumber = numerKarty;
+        this.creditCardnumber = numerKarty;
     }
 
     public String getSinceitisvalid() {
@@ -42,8 +42,8 @@ public class CreditCard {
     @Override
     public String toString() {
         return "CreditCard{" +
-                "codeCvv='" + codeCvv + '\'' +
-                ", cardnumber='" + cardnumber + '\'' +
+                "codeCvv='" + CCVCode + '\'' +
+                ", cardnumber='" + creditCardnumber + '\'' +
                 ", sinceitisvalid='" + sinceitisvalid + '\'' +
                 '}';
     }

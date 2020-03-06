@@ -4,28 +4,28 @@ import java.util.List;
 
 public class ShoppingBasket {
 
-    List<Product> productlist;
+   private List<Product> listOfproducts;
 
     public ShoppingBasket( List<Product> productlist ) {
-        this.productlist = productlist;
+        this.listOfproducts = productlist;
     }
 
     public ShoppingBasket() {
     }
 
     public List<Product> getListaProduktów() {
-        return productlist;
+        return listOfproducts;
     }
 
     @Override
     public String toString() {
         return "ShoppingBasket{" +
-                "productlist=" + productlist +
+                "productlist=" + listOfproducts +
                 '}';
     }
 
     public void setListaProduktów(List<Product> producrlist ) {
-        this.productlist = producrlist;
+        this.listOfproducts = producrlist;
 
 
     }
