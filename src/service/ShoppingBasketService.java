@@ -23,4 +23,10 @@ public class ShoppingBasketService {
             System.out.println(listOfProducts.get(i).getName());
         }
     }
+    public double discount(ShoppingBasket shoppingBasket, int percentage){
+      double price =  totalPrice(shoppingBasket);
+        return (price -(price/100)*percentage);
+    }
+
+
 }
