@@ -17,7 +17,11 @@ public class CreditCardService {
         if(cvvCode.length() != 3){
             return false;
         }
-//        if()
+        if(cvvCode.charAt(0) < 47 ||  cvvCode.charAt(0) > 57 ||
+           cvvCode.charAt(1) < 47 ||  cvvCode.charAt(1) > 57 ||
+           cvvCode.charAt(2) < 47 ||  cvvCode.charAt(2) > 57){
+            return false;
+        }
 
 
         return true;
