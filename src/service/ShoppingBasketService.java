@@ -24,8 +24,9 @@ public class ShoppingBasketService {
         }
     }
 
-    public double rabat(int percentage){
-        return 0.0;
+    public double discount(ShoppingBasket shoppingBasket, int percentage){
+        double price = totalPrice(shoppingBasket);
+        return (price - (price/100)*percentage);
     }
 
     public void checkCardValidation(){

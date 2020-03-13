@@ -14,11 +14,11 @@ public class Main {
 
         Product product2 =
                 new Product("Woda", "Niegazowana",
-                        5.0, false, "aWODA20");
+                        48.0, false, "aWODA20");
 
         Product product3 =
                 new Product("Kawa", "Ziarna",
-                        30.0, false, "aKAWA20");
+                        2.0, false, "aKAWA20");
 
         List<Product> listOfProducts = new ArrayList<>();
         listOfProducts.add(product1);
@@ -30,6 +30,7 @@ public class Main {
         ShoppingBasketService service = new ShoppingBasketService();
         System.out.println(service.totalPrice(shoppingBasket));
         service.printAllProductsName(shoppingBasket);
+        System.out.println(service.discount(shoppingBasket, 15));
 
 
     }

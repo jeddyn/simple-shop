@@ -2,12 +2,12 @@ package model;
 
 public class CreditCard {
 
-    private String CCVCode;
+    private String CVVCode;
     private String creditCardNumber;
     private String date;
 
-    public CreditCard( String CCVCode, String creditCardNumber, String date) {
-        this.CCVCode = CCVCode;
+    public CreditCard(String CVVCode, String creditCardNumber, String date) {
+        this.CVVCode = CVVCode;
         this.creditCardNumber = creditCardNumber;
         this.date = date;
     }
@@ -15,12 +15,12 @@ public class CreditCard {
     public CreditCard() {
     }
 
-    public String getCCVCode() {
-        return CCVCode;
+    public String getCVVCode() {
+        return CVVCode;
     }
 
-    public void setCCVCode( String CCVCode ) {
-        this.CCVCode = CCVCode;
+    public void setCVVCode(String CVVCode) {
+        this.CVVCode = CVVCode;
     }
 
     public String getCreditCardNumber() {
@@ -42,7 +42,7 @@ public class CreditCard {
     @Override
     public String toString() {
         return "CreditCard{" +
-                "CCVCode='" + CCVCode + '\'' +
+                "CCVCode='" + CVVCode + '\'' +
                 ", creditCardNumber='" + creditCardNumber + '\'' +
                 ", date='" + date + '\'' +
                 '}';
