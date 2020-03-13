@@ -1,18 +1,18 @@
 package model;
 
-public class CredictCard {
+public class KartaPłatnicza {
 
     private String kodCVV;
     private String numerKarty;
     private String dataOdKiedyWażna;
 
-    public CredictCard(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
+    public KartaPłatnicza(String kodCVV, String numerKarty, String dataOdKiedyWażna) {
         this.kodCVV = kodCVV;
         this.numerKarty = numerKarty;
         this.dataOdKiedyWażna = dataOdKiedyWażna;
     }
 
-    public CredictCard() {
+    public KartaPłatnicza() {
     }
 
     public String getKodCVV() {
