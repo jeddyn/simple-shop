@@ -2,9 +2,9 @@ package model;
 
 public class CreditCard {
 
-    private String CVVCode;
-    private String creditCardNumber;
-    private String date;
+    private String CVVCode; // 3 cyfry
+    private String creditCardNumber; //19 cyfr
+    private String date; // format 2000-03-12
 
     public CreditCard(String CVVCode, String creditCardNumber, String date) {
         this.CVVCode = CVVCode;

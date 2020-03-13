@@ -29,6 +29,4 @@ public class ShoppingBasketService {
         return (price - (price/100)*percentage);
     }
 
-    public void checkCardValidation(){
-    }
 }
